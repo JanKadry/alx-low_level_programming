@@ -1,22 +1,26 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>  // Needed to use printf function
+#include <stdio.h>
 
+/**
+ * main - Prints whether number n is positive, negative, or zero
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    int n;
+	int n; /* Variable to store the random number */
 
-    srand(time(0));         // Initialize random seed
-    n = rand() - RAND_MAX / 2; // Assign random value to n
+	srand(time(0)); /* random seed based on current time */
+	n = rand() - RAND_MAX / 2; /* Assign random value to n within full range */
 
-    // Check if n is positive, negative, or zero and print accordingly
-    if (n > 0) {
-        printf("%d is positive\n", n);
-    } else if (n == 0) {
-        printf("%d is zero\n", n);
-    } else {
-        printf("%d is negative\n", n);
-    }
+	/* Determine whether n is positive, negative, or zero */
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else
+		printf("%d is negative\n", n);
 
-    return (0);
+	return (0);
 }
