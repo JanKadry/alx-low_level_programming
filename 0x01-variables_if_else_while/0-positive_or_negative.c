@@ -9,12 +9,10 @@
  */
 int main(void)
 {
-	int n; /* Variable to store the random number */
+	int n;
 
-	srand(time(0)); /* random seed based on current time */
-	n = rand() - RAND_MAX / 2; /* Assign random value to n within full range */
-
-	/* Determine whether n is positive, negative, or zero */
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 		printf("%d is positive\n", n);
 	else if (n == 0)
