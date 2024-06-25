@@ -1,4 +1,4 @@
-#include "main.h";
+#include "main.h"
 /**
  * print_alphabet - check the code
  *
@@ -11,6 +11,5 @@ for (i = 0; i < 26; i++)
 {
 _putchar("abcdefghijklmnopqrstuvwxyz"[i]);
 }
-
-return (0);
+_putchar("\n");
 }
