@@ -1,13 +1,18 @@
 #include "main.h"
-
-
-   /**
-    * _print - moves a string one place to the left and prints the string
-    * @str: string to move
-    * @l: size of string
-    * Return: void
-    */
-
+/**
+ * _print - Moves a string one place to the left and prints the string.
+ * @str: The string to move and print.
+ * @l: The length of the string.
+ *
+ * Description:
+ * This function shifts the characters in the string `str` one position
+ * to the left, effectively removing the first character. It then prints
+ * the resulting string. The function ensures that leading zeroes are
+ * not printed unless the string consists entirely of zeroes. The string
+ * is dynamically allocated and should be freed after use.
+ *
+ * Return: void
+ */
 void _print(char *str, int l)
 {
 int i, j;
